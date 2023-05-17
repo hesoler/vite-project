@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Showhide() {
   const [show, setShow] = useState(true);
-  const handleClick = (event) => {
+  const handleClick = () => {
     setShow(!show);
   };
   return (

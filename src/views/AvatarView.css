@@ -1,0 +1,9 @@
+.avatarView {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+.avatarView img {
+  /* display: block; */
+  max-width: 400px;
+}

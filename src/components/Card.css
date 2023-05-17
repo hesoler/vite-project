@@ -1,9 +1,9 @@
 .Card {
     width: 400px;
     border-radius: 1em;
-    box-shadow: 2px 2px 5px rgb(58, 9, 138);
-    background-color: rgb(20, 147, 220);
+    box-shadow: 2px 2px 5px rgb(27, 76, 141);
+    background-color: rgb(29, 41, 48);
     text-align: center;
     padding: 10px;
-    border: 2px solid rgb(0, 0, 0);
+    /* border: 2px solid rgb(0, 0, 0); */
 }
