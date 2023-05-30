@@ -15,7 +15,7 @@ const routes = [
 
 avatars.forEach((avatar) => {
   routes.push({
-    path: avatar.name,
+    path: avatar.path,
     element: <AvatarView avatar={avatar} />,
   });
 });
