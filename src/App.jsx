@@ -1,14 +1,12 @@
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
+import { Link } from "react-router-dom";
 import "./App.css";
 import Card from "./components/Card";
 import avatars from "./data/avatars";
-import Showhide from "./components/Showhide";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   const avatarList = avatars.map((avt) => {
     return (
       <>
@@ -17,11 +15,15 @@ function App() {
       </>
     );
   });
+
   return (
     <>
       <div className="App">
         <h1>Rate your favorite avatar!</h1>
         <div className="container">{avatarList}</div>
+        <Link to="foods">
+          <h2>Food List</h2>
+        </Link>
       </div>
     </>
   );

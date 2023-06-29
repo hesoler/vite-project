@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import avatars from "./data/avatars.js";
 import AvatarView from "./views/AvatarView.jsx";
+import FoodView from "./views/FoodView.jsx";
 
 const routes = [
   {
@@ -20,11 +21,13 @@ avatars.forEach((avatar) => {
   });
 });
 
+routes.push({ path: "foods", element: <FoodView /> });
 const router = createBrowserRouter(routes);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    {/* <App/> */}
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </>
 );
