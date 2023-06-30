@@ -34,7 +34,7 @@ function FoodView() {
           })}
         </tbody>
       </table>
-      <br/>
+      <br />
       <button onClick={deleteRow}> Delete last row</button>
     </>
   );
