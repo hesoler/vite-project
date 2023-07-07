@@ -48,6 +48,15 @@
   /* justify-content: center; */
   padding: 1em;
 }
- .App h1 {
+.App h1 {
   text-align: center;
- }
+}
+
+.formBlock {
+  display: block;
+  padding: 0.5em;
+}
+
+form input {
+  margin: 0.5em;
+}

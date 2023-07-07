@@ -3,17 +3,24 @@
 // import viteLogo from "/vite.svg";
 import { Link } from "react-router-dom";
 import "./App.css";
+import { avatars } from "./data/jsonData";
 import Card from "./components/Card";
-import avatars from "./data/avatars";
 import { useState, useEffect } from "react";
 
-function App() {
+export function generateQuickGuid() {
+  return (
+    Math.random().toString(36).substring(2, 15) +
+    Math.random().toString(36).substring(2, 15)
+  );
+}
+
+export default function App() {
   const avatarList = avatars.map((avt) => {
     return (
-      <>
+      <div key={generateQuickGuid()} style={{ display: "contents" }}>
         <Card title={avt.name} description={avt.description} path={avt.path} />
         <img src={avt.imageURL} width="150px" height="150px" />
-      </>
+      </div>
     );
   });
 
@@ -39,9 +46,15 @@ function App() {
           </Link>
         </div>
         <br />
+        <div>
+          <Link to="users">
+            <label style={{ fontSize: "x-large" }}>User List</label>
+          </Link>
+        </div>
+        <br />
 
         <div>
-          <label for="inputTitle">Type your page title:</label>
+          <label htmlFor="inputTitle">Type your page title:</label>
           &nbsp;
           <input type="text" id="inputTitle" onChange={changeTitle} />
         </div>
@@ -49,5 +62,3 @@ function App() {
     </>
   );
 }
-
-export default App;

@@ -1,6 +1,5 @@
 import React from "react";
-import foodList from "../data/food";
-import "../data/food";
+import { foodList } from "../data/jsonData";
 
 function deleteRow() {
   if (foodList.length > 0) {
