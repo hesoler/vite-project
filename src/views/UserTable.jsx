@@ -30,7 +30,9 @@ function UserTable() {
           </tbody>
         </table>
       </div>
-      <Link to="form">Create new user</Link>
+      <Link to="form" className="link">
+        Create new user
+      </Link>
     </>
   );
 }

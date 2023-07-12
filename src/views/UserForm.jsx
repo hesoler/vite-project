@@ -48,7 +48,7 @@ function Form() {
           <button type="submit">Acept</button>
         </form>
         <br />
-        <Link to="/users">Back to users</Link>
+        <Link to="/users" className="link">Back to users</Link>
       </div>
     </>
   );

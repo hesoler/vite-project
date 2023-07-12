@@ -18,8 +18,12 @@ export default function App() {
   const avatarList = avatars.map((avt) => {
     return (
       <div key={generateQuickGuid()} style={{ display: "contents" }}>
-        <Card title={avt.name} description={avt.description} path={avt.path} />
-        <img src={avt.imageURL} width="150px" height="150px" />
+        <Card
+          title={avt.name}
+          description={avt.description}
+          path={avt.path}
+          imageURL={avt.imageURL}
+        />
       </div>
     );
   });
@@ -41,14 +45,13 @@ export default function App() {
         <div className="container">{avatarList}</div>
 
         <div>
-          <Link to="foods">
-            <label style={{ fontSize: "x-large" }}>Food List</label>
+          <Link to="foods" className="link">
+            <h2>Food List</h2>
           </Link>
         </div>
-        <br />
         <div>
-          <Link to="users">
-            <label style={{ fontSize: "x-large" }}>User List</label>
+          <Link to="users" className="link">
+            <h2>User List</h2>
           </Link>
         </div>
         <br />

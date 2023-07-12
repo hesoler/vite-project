@@ -60,3 +60,10 @@
 form input {
   margin: 0.5em;
 }
+
+.link {
+  color: rgb(112, 110, 248);
+}
+.link:hover {
+  color: cyan;
+}
